@@ -1,12 +1,11 @@
 <template>
-  <div></div>
+  <div>13</div>
 </template>
 
 <script>
 export default {
-  methods: {
-    // getList()
-  }
+  created() {},
+  methods: {}
 };
 </script>
 

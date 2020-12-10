@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     <router-view />
-    <footer-guite />
+    <login />
   </div>
 </template>
 
 <script>
-import FooterGuite from "./components/FooterGuite/FooterGuite.vue";
+import login from "./login";
+import Login from "./login.vue";
 export default {
   name: "App",
   components: {
-    FooterGuite
+    login
   }
 };
 </script>
 
-<style>
-</style>
+<style></style>
