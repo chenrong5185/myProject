@@ -16,3 +16,8 @@ html {
 #app {
   height: 100%;
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

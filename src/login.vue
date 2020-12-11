@@ -5,6 +5,7 @@
       class="login-form"
       autocomplete="on"
       label-position="left"
+      :model="loginForm"
     >
       <div class="title-container">
         <h3 class="title">Login Form</h3>
@@ -15,24 +16,41 @@
         </span>
         <el-input
           ref="username"
-          placeholder="Username"
+          placeholder="请输入账号"
           name="username"
           type="text"
+          tabindex="1"
+          :model="loginForm.username"
         />
       </el-form-item>
-      <el-tooltip content="Caps lock is On" placement="right" manual>
+      <el-tooltip
+        v-model="capsTooltip"
+        content="Caps lock is On"
+        placement="right"
+        manual
+      >
         <el-form-item>
           <span class="svg-container">
             <!-- <svg-icon icon-class="password" /> -->
           </span>
-          <el-input ref="password" />
+          <el-input
+            :key="passwordType"
+            ref="password"
+            :model="loginForm.password"
+            placeholder="请输入密码"
+            name="password"
+            tabindex="2"
+            autocomplete="on"
+          />
           <span class="show-pwd">
-            <!-- <svg-icon :icon-class="passwordType === 'password' ? 'eye' : 'eye-open'" /> -->
+            <!-- <svg-icon
+              :icon-class="passwordType === 'password' ? 'eye' : 'eye-open'"
+            /> -->
           </span>
         </el-form-item>
       </el-tooltip>
       <el-button type="primary" style="width:100%;margin-bottom:30px;"
-        >Login</el-button
+        >登录</el-button
       >
       <div style="position:relative">
         <div class="tips">
@@ -43,10 +61,17 @@
           <span style="margin-right:18px;">Username : editor</span>
           <span>Password : any</span>
         </div>
+        <el-button
+          class="thirdparty-button"
+          type="primary"
+          @click="showDialog = true"
+        >
+          Or connect with
+        </el-button>
       </div>
     </el-form>
     <el-dialog title="Or connect with">
-      <!-- <social-sign /> -->
+      <social-sign />
     </el-dialog>
   </div>
 </template>
@@ -54,7 +79,14 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      loginForm: {
+        username: "",
+        password: ""
+      },
+      capsTooltip: false,
+      passwordType: "password"
+    };
   },
   watch: {},
   created() {},

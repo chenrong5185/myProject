@@ -11,6 +11,8 @@ import './styles/index.css' // 全局样式
 import './mock/index'
 import * as Service from '../src/utils/http'
 
+import './icons'
+
 Vue.use(Element)
 Vue.prototype.$http = Service
 Vue.config.productionTip = false
