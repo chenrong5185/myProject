@@ -1,4 +1,4 @@
-import service from './request'
+import Service from './request'
 
 export function getConfigsByProductId(productId) {
   return Service({

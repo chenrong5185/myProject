@@ -3,8 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-// import {Service} from '../src/utils/api'
-// Vue.prototype.$htpp=Service
+import * as Service from '../src/utils/http'
+Vue.prototype.$http=Service
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

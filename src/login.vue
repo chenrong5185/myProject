@@ -3,18 +3,13 @@
 </template>
 
 <script>
-import {
-  getAllAndroidPlugins,
-  getConfigsByProductId,
-  addNewAndroidPlugin
-} from "./utils/api";
 export default {
   created() {
     this.handle();
   },
   methods: {
     handle() {
-      getAllAndroidPlugins().then(res => {
+      this.$http.getAllAndroidPlugins().then(res => {
         console.log(123);
       });
     }
