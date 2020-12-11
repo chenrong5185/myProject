@@ -1,6 +1,6 @@
 import axios from "axios";
 import { Message, Loading } from 'element-ui'
-const ConfigBaseURL = 'https://localhost:8080/'
+const ConfigBaseURL = 'http://localhost:8081/'
 let loadingInstance = null //这里是loading
 //使用create方法创建axios实例
 export const Service = axios.create({

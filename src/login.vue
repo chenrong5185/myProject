@@ -5,12 +5,12 @@
 <script>
 export default {
   created() {
-    this.handle();
+    // this.handle();
   },
   methods: {
     handle() {
-      this.$http.getAllAndroidPlugins().then(res => {
-        console.log(123);
+      this.$http.getName().then(res => {
+        console.log(res.data);
       });
     }
   }

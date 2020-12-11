@@ -6,9 +6,9 @@ export function getConfigsByProductId(productId) {
     params: { productId: productId }
   })
 }
-export function getAllAndroidPlugins() {
+export function getName() {
   return Service({
-    url: ' ',
+    url: '/decision/getName',
     method: 'get'
   })
 }

@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import './mock/index'
 import * as Service from '../src/utils/http'
 Vue.prototype.$http=Service
 Vue.config.productionTip = false
