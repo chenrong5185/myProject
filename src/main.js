@@ -7,11 +7,12 @@ import router from './router'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
 import './styles/index.css' // 全局样式
+// import './styles/element-variables.less'
 
 import './mock/index'
 import * as Service from '../src/utils/http'
 
-import './icons'
+import './assets/fonts/font_2272971_0xb1gellzik/iconfont.css'
 
 Vue.use(Element)
 Vue.prototype.$http = Service

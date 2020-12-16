@@ -1,0 +1,23 @@
+{
+  "id": "2272971",
+  "name": "goshop",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6723951",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "16842350",
+      "name": "密 码",
+      "font_class": "mima1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("./iconfont.eot?t=1608084605348"); /* IE9 */
+  src: url("./iconfont.eot?t=1608084605348#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOwAAsAAAAAB5gAAANkAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCfgqDCIJkATYCJAMMCwgABCAFhG0HOBukBsgekiQnodXgsKSSAAgQB8/z+6tz//ujN0snMsl10sIh72ZlAJFoSmxCn9AW/qnO903iT1WTnvxFL2Y3G82qsk7yCeYp7an38jx2e7+7y/MMAw5aHCVJW2ApZJwkkAGX0x8L8LF1QDmONW1Mm7QwwDiggPbGNpVgASXIDdPLlwfzOARoUSZBU2V9O9iY9DgBsksiA7aUi1lTLOyEtWRpXS7raezdCuMhAAP+9+WD1NgAg6WAnuraKngofuG3lPn/81ldAvV4AYCtAgWSASZkLg25GMNMMiPNMybRYF39BG75/3Hjqlb7hwfCgPSgCz0AxMOsATe2iVNTwzMwACgAVuAA7YBFyAbcxWQZQoJQWEBgYLC2eUvg5TvYsqVnQhbcF24dbdm2Td686bIq71933r5s73qV4756bEv9rVeO/bflp6/HHnqoajtyAl3Ho4OOrgjatRrHBa3cW5rF3LOM4Is3Y9CC+ZWDqiOXD9ehc+ihrfdMgrNg5+iyv3uroAUTPWNs680/Oekjy7zjOlLNyz2XW3PTmOtlJ91Xw1FX1K3pHYZS6F5QmRG7e0rRtl09qGzyxJqOqviumdDYpn//31JZZbbYQnOxYDFPKYHzZ1wPo/3RH4tbiz/67zU9LiVFjS58+DPKH3Avtu7frv1R/641Pros70cJweX+ciktiaxEQ4NQebZMdez5v+uICPgbsAV8jvnshmGYHqkOw3qAGo3nv+k3fE2eow6F5r/anCYAePlf044dpnYRwH4jYcFPCbUd1OiEVqdVBUAWs20RSiXzbVehafAPY34+97cEikIQdoExDDaRUOyiSZNNhoVTNqzsCqElqVrt5E9lJNUOkGgJgPBxEgYvx1B8PCJN9hMsgvyBlU+M0KoSuaVTbKSAMpUwOuExOwNLHPUJllcPCIpbiTjFw6hJrS/pJKomxXFKYnI2X0V8RB1jhjZVTNV1AQsq9eJKcBrxeCiWVeoinJ7o1HU5NylJKHtSIke9EKCUimDoCB7GmgGTcCgfwW2tC8h9vhUhmsKDodY05MqdCJVG6hxLkSi5BVll8rVquJZzNFOJUul0AkygorywShAgPCZDYXL5IBeCo0vk7JGS5UpCzYS2psT5Ld7n2wZoel8VAzIiE1gv6hOdU8xeycukAAA=")
+      format("woff2"),
+    url("./iconfont.woff?t=1608084605348") format("woff"),
+    url("./iconfont.ttf?t=1608084605348") format("truetype"),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+      url("./iconfont.svg?t=1608084605348#iconfont") format("svg"); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yonghu:before {
+  content: "\e600";
+}
+
+.icon-mima1:before {
+  content: "\e601";
+}
