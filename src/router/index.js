@@ -15,6 +15,7 @@ export default new Router({
     },
     {
         path: "/msite",
+        name:'首页',
       component: Msite
     },
     {

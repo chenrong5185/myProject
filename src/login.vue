@@ -1,5 +1,9 @@
 <template>
   <div class="login-container">
+    <div class="box">
+      1
+    </div>
+    <div class="box1">2</div>
     <el-form
       ref="loginForm"
       class="login-form"
@@ -49,10 +53,13 @@
           </span>
         </el-form-item>
       </el-tooltip>
-      <el-button type="primary" style="width:100%;margin-bottom:30px;"
+      <el-button
+        type="primary"
+        style="width:100%;margin-bottom:30px;"
+        @click="handleLogin"
         >登录</el-button
       >
-      <div style="position:relative">
+      <!-- <div style="position:relative">
         <div class="tips">
           <span>Username : admin</span>
           <span>Password : any</span>
@@ -61,14 +68,7 @@
           <span style="margin-right:18px;">Username : editor</span>
           <span>Password : any</span>
         </div>
-        <el-button
-          class="thirdparty-button"
-          type="primary"
-          @click="showDialog = true"
-        >
-          Or connect with
-        </el-button>
-      </div>
+      </div> -->
     </el-form>
     <el-dialog title="Or connect with">
       <social-sign />
@@ -92,11 +92,18 @@ export default {
   created() {},
   mounted() {},
   destroyed() {},
-  methods: {}
+  methods: {
+    // handleLogin() {
+    //   this.$router.push({
+    //     name: "首页"
+    //   });
+    // }
+  }
 };
 </script>
 <style lang="less" scoped>
-@bg: #283443;
+// @bg: #283443;
+@bg: #ffffff;
 @light_gray: #fff;
 @cursor: #fff;
 @dark_gray: #889aa4;
@@ -175,5 +182,17 @@ export default {
       display: none;
     }
   }
+}
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-bottom: 5px solid;
+}
+.box1 {
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: transparent transparent lightgreen transparent;
 }
 </style>
